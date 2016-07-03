@@ -1,3 +1,3 @@
 function getTemp()
-  return -1 --TODO: finish this
+  return nil --TODO: finish this
 end

@@ -1,7 +1,9 @@
-sleepTime = 5
+-- init variables
+sleepTime = 2
 modules = {}
 
-reactor = peripheral.wrap("nuclear_reactor_3") -- fill in the number
+-- init peripherals
+reactor = peripheral.wrap("nuclear_reactor_3")
 monitor = peripheral.wrap("left")
 term.redirect(monitor)
 print("[Log]Peripherals connected.")
@@ -20,10 +22,13 @@ for i = 1, count do
 end
 print("[Log]Modules are loaded.")
 
+-- clear the term for the GUI
+sleep(sleepTime)
+term.clear()
+
 -- main structure
 while true do
 	reactorTemp = heat.getTemp()
-  print("Reactor heat".." "..reactorTemps)
   --Todo:A GUI
   sleep(sleepTime)
 end
