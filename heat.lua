@@ -1,6 +1,3 @@
-heat = {}
-function heat.test()
-	print("the API loder works great if you see this message")
+function getTemp()
+  return -1 --TODO: finish this
 end
-
-return heat
